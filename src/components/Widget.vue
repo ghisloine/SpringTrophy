@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div style="text-align:center;height:600px">
         <section id="Edges">
             <img src="../assets/Edges.png" alt="" id="Edge">
             <img src="../assets/RaceBook.png" alt="" id="RaceBook" v-on:click="RaceBookActivate">
@@ -7,6 +7,7 @@
             <img src="../assets/WeatherForecast.png" alt="" id="WeatherForecast" v-on:click="WeatherActivate">
             <img src="../assets/Photo.png" alt="" id="PhotoShortcut" v-on:click="PhotoActivate">
         </section>
+        <img src="../assets/WidgetBackground.png" id="BackgroundImage"> 
         <!-- v-if ile hangisinin gozukecegine iyi karar vermemiz gerekiyor -->
         <section id="Widget">
             <div id="Photo">
@@ -50,14 +51,10 @@
         </div>
         <div id="Weather">
             <img src="../assets/GoldenToy.png" alt="" id="GoldenToy">
-            <ul id="WeatherList">
-                <li>
-                    <span>{{ Weathers.main.temp }}</span>
+            
                     
-                </li>
-                <li id="Derece">o</li>
-            </ul>
             <div>
+                <span id="WeatherList">{{ Weathers.main.temp }}&#176;</span><br><br>
                 <span id="Location">Istanbul,Turkey</span>
                 <img :src="WeatherIcon" id="OuterWind">
                 <img src="../assets/DikineCizgi.png" id="DikineCizgi">
@@ -66,12 +63,12 @@
                 <span id="WindSpeed">{{ Weathers.wind.speed }}kmh</span>
         </div>
         </section>
-        <section>
-            <h1>Photo Title</h1>
-            <img src="" alt="">
-            <h3>Lorem Ipsum Dolor Sit Ames.</h3>
-            <a href=""></a>
-        </section>
+        <!-- <section id="PhotoText">
+            <span id="PhotoTitle">Photo Title</span><br>
+            <span id="PhotoContentLower">Lorem Ipsum Dolor Sit Ames.</span><br>
+            <a href="#" id="GalleryLink">Gallery</a>
+        </section>-->
+        
     </div>
 </template>
 <script>
@@ -136,32 +133,39 @@
         padding: 0;
         margin: 0;
     }
+    #BackgroundImage{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
     #Edges{
-        position: relative;
-        left: 130px;
+        margin: 0 auto;
+        max-width: 506px;
+        
     }
     #RaceBook{
         position: relative;
-        right: 75px;
-        bottom: 15px;
+        left: 265px;
+        bottom: 65px;
         cursor: pointer;
     }
     #WeatherForecast{
         position: relative;
-        right: 290px;
-        bottom: 15px;
+        left: 50px;
+        bottom: 65px;
         cursor: pointer;
     }
     #PhotoShortcut{
         position: relative;
-        right: 480px;
-        bottom: 12px;
+        right: 136px;
+        bottom: 65px;
         cursor: pointer;
     }
     #VideoShortcut{
         position: relative;
-        right: 480px;
-        bottom: 15px;
+        right: 140px;
+        bottom: 65px;
         cursor: pointer;
     }
     #LeftSideVideo{
@@ -180,10 +184,9 @@
         left: 270px;
     }
     #Widget {
-        background-image: url("../assets/WidgetBackground.png");
-        width: 830px;
-        height: 400px;
         margin: 0 auto;
+        position: relative;
+        bottom: 395px;
     }
     #Photo{
         display: inline;
@@ -199,6 +202,7 @@
     #Weather{
         display: none;
     }
+    
     #LeftSide img{
         width: 420px;
         height: 251px;
@@ -302,19 +306,13 @@
         right: 70px;
     }
     #WeatherList{
-        position: relative;
-        left: 253px;
-        bottom: 190px;
-        list-style-type: none;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        }
-    #WeatherList span{
         font-size: 86px;
         line-height: 46px;
         color: #fbb916;
         font-family: "Josefin Sans";
+        position: relative;
+        bottom: 190px;
+        left: 250px;
     }
     #Derece{
         font-size: 40px;
@@ -323,14 +321,6 @@
         font-family: "Josefin Sans";
         position: relative;
         bottom: 30px;
-    }
-    #WeatherList p{
-        height: 24px;
-        font-size: 20px;
-        color: #fbb916;
-        font-family: "Josefin Sans";
-        position: relative;
-        bottom: 20px;
     }
     #Location{
         font-size: 20px;
@@ -374,5 +364,30 @@
         position: relative;
         bottom: 224px;
         left: 293px;
+    }
+    #GalleryLink{
+        font-size: 15px;
+        line-height: 17px;
+        color: #fbb813;
+        font-family: "Josefin Sans";
+    }
+    #PhotoContentLower{
+        width: 602px;
+        height: 88px;
+        font-size: 13px;
+        line-height: 17px;
+        color: #58595b;
+        font-family: "Josefin Sans";
+    }
+    #PhotoTitle{
+        font-size: 25px;
+        line-height: 104px;
+        color: #055388;
+        font-family: "Josefin Sans";
+    }
+    #PhotoText{
+        text-align: left;
+        position: relative;
+
     }
 </style>
