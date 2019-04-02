@@ -6,8 +6,10 @@
           <img src="../assets/SpringTrophyLogo.png" style="width:330px;height:200px" id="TopLogo">
           <!-- Burdaki li icindeki linkler ileride databaseden degistirilir hale gelecek ! -->
           <ul>
-            <li><img src="../assets/MenuLeftIcon.png" alt=""><a href="" class="RaceDocs hoverable">REGISTER</a></li>
-            <li><img src="../assets/MenuLeftIcon.png" alt=""><a href="" class="RaceDocs hoverable">STAGE RESULTS</a></li>
+            <li><img src="../assets/MenuLeftIcon.png" alt=""><a href="" class="RaceDocs hoverable">Yarış İlanı</a></li>
+            <li><img src="../assets/MenuLeftIcon.png" alt=""><a href="" class="RaceDocs hoverable">Kayıt Formu</a></li>
+            <li><img src="../assets/MenuLeftIcon.png" alt=""><a href="" class="RaceDocs hoverable">Ek Talimat</a></li>
+            <li><img src="../assets/MenuLeftIcon.png" alt=""><a href="" class="RaceDocs hoverable">Sonuçlar</a></li>
           </ul>
         </div>
         <div class="col s12 m6">

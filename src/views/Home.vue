@@ -3,18 +3,18 @@
     <header>
       <Race></Race>
     </header>
-      <Navigation></Navigation>
-    <div class="home">
-      <Carousel></Carousel>
-      <br>
-      <section class="hide-on-med-and-down home">
-        <Widget></Widget>
-      </section>
-    </div>
+      <!--<Navigation></Navigation>
+            <div class="home">
+              <Carousel></Carousel>
+              <br>
+              <section class="hide-on-med-and-down home">
+                <Widget></Widget>
+              </section>
+            </div>
       <News></News>
       <Vela></Vela>
       <Contact></Contact>
-      <Footer></Footer>
+      <Footer></Footer> -->
   </div>
 </template>
 
